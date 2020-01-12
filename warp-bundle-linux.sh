@@ -12,5 +12,5 @@ dotnet publish ./buckaroo-cli/ -c Release -r linux-x64
 mkdir -p warp
 rm -rf ./warp/buckaroo-linux
 
-./warp-packer --arch linux-x64 --exec buckaroo-cli --input_dir ./buckaroo-cli/bin//intel64/Release/netcoreapp3.0/linux-x64 --output warp/buckaroo-linux
+./warp-packer --arch linux-x64 --exec buckaroo-cli --input_dir ./buckaroo-cli/bin/intel64/Release/netcoreapp3.0/linux-x64 --output warp/buckaroo-linux
 ./warp/buckaroo-linux
